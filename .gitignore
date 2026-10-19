@@ -1,0 +1,9 @@
+.cpcache/
+.nrepl-port
+.lsp/
+.clj-kondo/.cache/
+.venv/
+.ci-deps/
+.jolt/
+.samizdat/
+.writ-cache/
