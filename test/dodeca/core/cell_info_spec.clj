@@ -49,10 +49,12 @@
     (=> (< r 0) (= 0 (info/num-cells r)))))
 
 ;; The descendants of every cell at p cover the cells at c exactly; the
-;; world cell, one cell though no resolution's, has them all
+;; world cell, one cell though no resolution's, has them all. c is a real
+;; resolution: at -1 num-cells counts nothing while the world cell is its own
+;; single descendant
 (law num-children-partitions
   (forall [p Resolution c Resolution]
-    (=> (<= p c)
+    (=> (and (<= p c) (<= 0 c))
         (= (info/num-cells c) (*' (info/num-children p c) (if (neg? p) 1 (info/num-cells p)))))))
 
 (law num-children-of-a-finer-cell
