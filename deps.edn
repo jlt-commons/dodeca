@@ -4,8 +4,8 @@
                                                       :git/tag "v2.5.2"
                                                       :git/sha "1fce9070ee851f49a6c4ce6e1c0bb0db4d7594a0"}
                                jolt-lang/time {:git/url "https://github.com/jolt-lang/time"
-                                               :git/tag "v0.0.10"
-                                               :git/sha "faff43aa3260bf79bb3fba10f6d9336190f83281"}}
+                                               :git/tag "v0.0.14"
+                                               :git/sha "ce6104687387328b909bbd372107376018acbf4b"}}
                   :main-opts ["-m" "dodeca.test-runner"]}
           ;; The specs under test/*_spec.clj, checked with writ:
           ;;   jolt -A:writ -M [dodeca.some-spec ...]
@@ -14,7 +14,9 @@
                                                      :git/tag "v2.5.2"
                                                      :git/sha "1fce9070ee851f49a6c4ce6e1c0bb0db4d7594a0"}
                               jolt-lang/time {:git/url "https://github.com/jolt-lang/time"
-                                              :git/tag "v0.0.10"
-                                              :git/sha "faff43aa3260bf79bb3fba10f6d9336190f83281"}
-                              io.github.jlt-commons/writ {:local/root "/Users/yogthos/src/jlt-commons/writ"}}
+                                              :git/tag "v0.0.14"
+                                              :git/sha "ce6104687387328b909bbd372107376018acbf4b"}
+                              io.github.jlt-commons/writ {:git/url "https://github.com/jlt-commons/writ"
+                                                          :git/tag "v0.1.14"
+                                                          :git/sha "11ea31dfd4f261332df3b227c37c962e30eefb4e"}}
                  :main-opts ["-m" "dodeca.spec-runner"]}}}
